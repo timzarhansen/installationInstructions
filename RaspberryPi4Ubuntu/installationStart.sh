@@ -37,11 +37,12 @@ cd ~
 source ~/.bashrc
 
 
-#install swap file
+#install swap file not working propably currently has to be tested again
 sudo apt-get install dphys-swapfile -y
 sudo sed -i 's/\#CONF_MAXSWAP=2048/CONF_MAXSWAP=4096/g' /etc/dphys-swapfile
 sudo sed -i 's/\#CONF_SWAPSIZE=/CONF_SWAPSIZE=4096/g' /etc/dphys-swapfile
 sudo systemctl enable dphys-swapfile
+sudo reboot
 
 
 
