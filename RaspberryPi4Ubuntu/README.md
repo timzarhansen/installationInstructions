@@ -15,5 +15,5 @@ Still missing are the network settings.
 
 For other installations follow these scripts:
 
-* PCL/OpenCV4/fftw3 
-* own Packages for Sonar SLAM etc.
+* PCL/OpenCV4/fftw3: `installationGeneralLibraries.sh`
+* own Underwater Packages: `installationUnderwaterSlamPackages.sh`
