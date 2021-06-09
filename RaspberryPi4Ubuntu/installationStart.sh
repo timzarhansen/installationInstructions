@@ -11,6 +11,7 @@ sudo apt update -y
 sudo apt install htop
 sudo apt install ros-noetic-ros-base -y
 sudo apt install ros-noetic-mavros* -y
+sudo apt install ros-noetic-tf2-geometry-msgs ros-noetic-tf2 -y
 
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
@@ -34,4 +35,13 @@ catkin build
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 cd ~
 source ~/.bashrc
+
+
+#install swap file
+sudo apt-get install dphys-swapfile -y
+sudo sed -i 's/\#CONF_MAXSWAP=2048/CONF_MAXSWAP=4096/g' /etc/dphys-swapfile
+sudo sed -i 's/\#CONF_SWAPSIZE=/CONF_SWAPSIZE=4096/g' /etc/dphys-swapfile
+sudo systemctl enable dphys-swapfile
+
+
 
