@@ -17,3 +17,11 @@ For other installations follow these scripts:
 
 * PCL/OpenCV4/fftw3: `installationGeneralLibraries.sh`
 * own Underwater Packages: `installationUnderwaterSlamPackages.sh`
+
+
+# Network Settings
+
+Change hostname in `/etc/hostname` to desired name(here `pibluerov`).
+add ip address + hostname to `/etc/hosts`
+
+Example: `192.168.0.3 pibluerov`
