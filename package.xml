@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>installInstructions</name>
+  <name>installinstructions</name>
   <version>0.0.0</version>
   <description>install instructions test</description>
   <maintainer email="tim@todo.todo">tim</maintainer>
