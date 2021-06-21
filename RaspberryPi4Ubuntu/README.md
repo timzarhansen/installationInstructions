@@ -5,7 +5,7 @@ Setup of Raspberry Pi 4 for BlueROV2 Slam algorithms with Sonar.
 Image of Ubuntu 20.04 for RPI 4 is [here](https://ubuntu.com/download/raspberry-pi).
 This is a server version, which is enough for an Underwater Robot.
 
-Download the `installationStart.sh` and start it with `./installationStart.sh`
+Download the `installationStart.sh` and start it with `source installationStart.sh`
 This script installs:
 * ROS Noetic
 * Mavros
@@ -15,6 +15,13 @@ Still missing are the network settings.
 
 For other installations follow these scripts:
 
-* PCL library
-* OpenCV
-* own Packages for Sonar SLAM etc.
+* PCL/OpenCV4/fftw3: `installationGeneralLibraries.sh`
+* own Underwater Packages: `installationUnderwaterSlamPackages.sh`
+
+
+# Network Settings
+
+Change hostname in `/etc/hostname` to desired name(here `pibluerov`).
+add ip address + hostname to `/etc/hosts`
+
+Example: `192.168.0.3 pibluerov`
