@@ -16,7 +16,4 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/ms-teams
 
 sudo apt update -y
 sudo apt install teams -y
-sudo add-apt-repository ppa:graphics-drivers
-sudo apt-get update -y
-sudo apt install nvidia-340* -y
 
