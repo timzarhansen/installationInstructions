@@ -25,3 +25,18 @@ Change hostname in `/etc/hostname` to desired name(here `pibluerov`).
 add ip address + hostname to `/etc/hosts`
 
 Example: `192.168.0.3 pibluerov`
+
+# add static ip address:
+
+On pi: add following lines at `/etc/netplan/******.yaml`
+```network:
+    ethernets:
+        eth0:
+            dhcp4: no
+            addresses:
+             - 192.168.2.2/24
+    version: 2
+```
+this sets the ip address to static. 
+then apply: `sudo netplan apply`
+
