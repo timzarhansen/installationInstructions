@@ -15,6 +15,9 @@ sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl lib
 echo 'source ~/Documents/PX4-Autopilot/Tools/setup_gazebo.bash ~/Documents/PX4-Autopilot ~/Documents/PX4-Autopilot/build/px4_sitl_default' >> ~/.bashrc
 echo 'export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/Documents/PX4-Autopilot' >> ~/.bashrc
 echo 'export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/Documents/PX4-Autopilot/Tools/sitl_gazebo' >> ~/.bashrc
+echo 'export GAZEBO_MODEL_PATH=~/catkin_ws/src/BlueROV2Gazebo/Tools/sitl_gazebo/models'  >> ~/.bashrc
+
+
 source ~/.bashrc
 
 cd ~/Documents/PX4-Autopilot

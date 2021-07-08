@@ -12,7 +12,9 @@ sudo apt install autoconf -y
     --prefix=/usr
 make -j4
 sudo make install
-
+cd ~/Documents
+wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+sudo bash ./install_geographiclib_datasets.sh
 # catkin packages
 cd ~/catkin_ws/src
 
