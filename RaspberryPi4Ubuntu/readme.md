@@ -25,3 +25,21 @@ Change hostname in `/etc/hostname` to desired name(here `pibluerov`).
 add ip address + hostname to `/etc/hosts`
 
 Example: `192.168.0.3 pibluerov`
+
+# add static ip address:
+
+On pi: add following lines at `/etc/netplan/******.yaml`
+```network:
+    ethernets:
+        eth0:
+            dhcp4: no
+            addresses:
+             - 192.168.2.2/24
+    version: 2
+```
+this sets the ip address to static. 
+then apply: `sudo netplan apply`
+
+Connection for Mavros/Link : `mavlink-routerd -e 192.168.2.1:14550 -e 127.0.0.1:14550 /dev/ttyACM0:1500000`
+connect with mavlink Console: `./Tools/mavlink_shell.py /dev/ttyACM0`
+
