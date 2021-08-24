@@ -1,11 +1,13 @@
 #!/bin/bash
 
+mkdir -p ~/Documents
 cd ~/Documents
-git clone https://github.com/PX4/PX4-Autopilot.git
+git clone https://github.com/Zarbokk/PX4-Autopilot.git
 sudo apt install python3-pip -y
 pip3 install --user packaging
 pip3 install --user toml
 pip3 install --user jinja2
+mkdir -p ~/Downloads
 cd ~/Downloads
 wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 sudo bash ./install_geographiclib_datasets.sh
