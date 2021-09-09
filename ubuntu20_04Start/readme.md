@@ -4,9 +4,15 @@
 * remove `# @board px4_fmu-v2 exclude` line from `60002_uuv_bluerov2_heavy` in PX4
 * `DONT_RUN=1 make px4_sitl_default gazebo`
 * `git submodule update --force --recursive --init --remote`
+* `make px4_fmu-v5_default upload`
+
 Connect directly to the Pi without PW:[here](https://serverfault.com/questions/241588/how-to-automate-ssh-login-with-password)
 
 # Network Settings
 
-export ROS_MASTER_URI=http://192.168.2.2:11311
-export ROS_IP=192.168.2.1
+export ROS_MASTER_URI=http://10.42.0.135:11311
+export ROS_IP=10.42.0.1
+
+# For Tile Customization
+user this `https://extensions.gnome.org/extension/657/shelltile/`
+then add everything
