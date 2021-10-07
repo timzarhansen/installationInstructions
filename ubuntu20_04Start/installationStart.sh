@@ -26,7 +26,7 @@ source ~/.bashrc
 sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential -y
 sudo apt install python3-catkin-tools python3-osrf-pycommon -y
 sudo apt-get install chrome-gnome-shell -y
-
+sudo apt install vlc -y
 cd ~
 mkdir catkin_ws
 cd catkin_ws
