@@ -12,6 +12,7 @@ sudo apt install python3-pigpio -y
 sudo apt install arm-none-eabi-gcc -y #for compiling px4 on rpi4 needs 2.3gb space
 pip3 install --user packaging
 pip3 install --user toml
+pip install --user pyyaml
 
 
 
