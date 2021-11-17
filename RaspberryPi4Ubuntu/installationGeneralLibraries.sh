@@ -4,6 +4,8 @@ sudo apt install libpcl-dev -y
 sudo apt install ros-noetic-pcl* -y
 sudo apt install ros-noetic-cv-bridge -y
 sudo apt install ros-noetic-roslint -y
+sudo apt install ros-noetic-video-stream-opencv -y
+sudo apt install ros-noetic-compressed-image-transport -y
 
 sudo apt install libopencv-dev python3-opencv -y
 sudo apt install -y libfftw3-dev -y
