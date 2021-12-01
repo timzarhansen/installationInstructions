@@ -37,6 +37,8 @@ rosdep update
 
 cd src
 
+source ~/.bashrc
+
 git clone https://github.com/Zarbokk/installationInstructions.git
 cd ..
 catkin build
