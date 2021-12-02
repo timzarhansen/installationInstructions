@@ -19,6 +19,7 @@ sudo apt update -y
 sudo apt install ros-noetic-desktop -y
 sudo apt install ros-noetic-mavros* -y
 sudo apt install ros-noetic-tf2-geometry-msgs ros-noetic-tf2 -y
+sudo apt install ros-noetic-rqt-multiplot -y
 
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
