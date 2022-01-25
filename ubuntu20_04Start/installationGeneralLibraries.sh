@@ -11,6 +11,7 @@ sudo apt install -y libfftw3-dev -y
 sudo apt install terminator -y
 sudo apt install htop -y
 sudo apt install python3-pip -y
+sudo apt install libqt5gamepad5* -y
 
 pip3 install --user pyquaternion
 
