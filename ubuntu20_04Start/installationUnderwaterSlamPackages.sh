@@ -11,3 +11,4 @@ git clone https://github.com/GSO-soslab/waterlinked_dvl_ros
 
 cd ~/catkin_ws
 catkin build
+catkin build
