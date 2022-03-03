@@ -38,7 +38,7 @@ cd src
 
 git clone https://github.com/Zarbokk/installationInstructions.git
 cd ..
-catkin build
+catkin build -j 2
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 cd ~
 source ~/.bashrc

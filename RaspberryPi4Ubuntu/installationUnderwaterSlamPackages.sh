@@ -27,4 +27,4 @@ git clone https://github.com/Zarbokk/commonBlueROVMSG.git
 
 
 cd ~/catkin_ws
-catkin build
+catkin build -j 2
