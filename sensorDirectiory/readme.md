@@ -3,7 +3,7 @@
 
 DVL: 
  Ros Driver: https://github.com/GSO-soslab/waterlinked_dvl_ros
-
+ add static ip address of `192.168.194.90`
 Install IMU External:
 Download: `https://www.xsens.com/mt-software-suite/`
  `sudo apt-get install sharutils`
