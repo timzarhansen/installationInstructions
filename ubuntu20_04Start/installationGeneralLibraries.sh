@@ -13,7 +13,7 @@ sudo apt install htop -y
 sudo apt install python3-pip -y
 sudo apt install libqt5gamepad5* -y
 sudo apt install curl -y
-sudo apt install libgcal-dev -y
+sudo apt install libcgal-dev -y
 pip3 install --user pyquaternion
 
 curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
