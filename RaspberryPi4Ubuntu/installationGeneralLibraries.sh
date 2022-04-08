@@ -17,7 +17,7 @@ sudo apt install python3-pip -y
 sudo apt install python3-pigpio -y
 sudo apt install arm-none-eabi-gcc -y #for compiling px4 on rpi4 needs 2.3gb space
 sudo apt install libqt5gamepad5* -y
-sudo apt install libgcal-dev -y
+sudo apt install libcgal-dev -y
 
 pip3 install --user packaging
 pip3 install --user toml
