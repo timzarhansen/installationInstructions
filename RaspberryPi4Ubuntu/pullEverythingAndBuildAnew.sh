@@ -17,6 +17,6 @@ git pull
 
 cd ~/catkin_ws
 catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release
-catkin build -j 3
+catkin build -j 2
 
 cd ~
