@@ -2,7 +2,7 @@
 
 copyFolder () {
   ssh ubuntu@$1 mkdir -p catkin_ws/src/$2
-  rsync -avh ~/catkin_ws/src/$2/ ubuntu@$1:~/catkin_ws/src/$2 --exclude=cmake-build-debug --exclude=build --exclude=.git --exclude=.idea
+  rsync -avh ~/catkin_ws/src/$2/ ubuntu@$1:~/catkin_ws/src/$2 --exclude=cmake-build-debug --exclude=build --exclude=.git --exclude=.idea --delete
 }
 
 IP_ADDRESS="10.42.0.150"
