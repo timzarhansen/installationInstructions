@@ -55,3 +55,9 @@ sudo make install
 sudo pigpiod
 
 ```
+
+Restart PiCam:
+```
+sudo modprobe -r uvcvideo
+sudo modprobe uvcvideo
+```
