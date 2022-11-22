@@ -20,3 +20,12 @@ if not there:
 add `deb http://security.ubuntu.com/ubuntu bionic-security main` to `sudo gedit /etc/apt/sources.list`
 
 On PI just: `sudo apt install ros-noetic-xsens-mti-driver`
+
+
+
+
+# PX4 Commands
+
+Show all Topics: `uorb top`
+Print special Topic `listener <TOPIC>`
+Baro: `ms5611 status` or `ms5611 start/stop -X` -X/-S external und -I/-s Internal
