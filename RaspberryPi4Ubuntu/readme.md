@@ -62,5 +62,13 @@ sudo modprobe -r uvcvideo
 sudo modprobe uvcvideo
 ```
 
+Synchronize Time of PIs:
+```
+https://raspberrypi.stackexchange.com/questions/89675/sync-time-for-all-raspberry-pis-on-local-network-without-internet
+https://pimylifeup.com/raspberry-pi-time-sync/
+
+
+```
+
 
 
