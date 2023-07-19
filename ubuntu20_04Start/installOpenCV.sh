@@ -2,7 +2,7 @@
 sudo apt update -y
 sudo apt upgrade -y
 
-cd Documents
+cd ~/Documents
 mkdir opencvInstall
 cd opencvInstall
 
@@ -15,9 +15,7 @@ cmake --build .
 sudo make install
 
 
-cd
-
-cd catkin_ws/src
+cd ~/catkin_ws/src
 
 git clone --branch noetic https://github.com/ros-perception/vision_opencv.git
 
