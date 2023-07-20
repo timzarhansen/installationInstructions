@@ -1,5 +1,46 @@
 #!/bin/bash
 
+sudo apt install libtbb-dev
+cd ~/Documents
+git clone https://github.com/borglab/gtsam.git
+cd gtsam
+git checkout 4.1.1
+
+
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+
+
+cd ~/Documents
+
+git clone https://github.com/lava/matplotlib-cpp.git
+cd matplotlib-cpp
+
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+
+
+cd ~/Documents
+
+
+git clone https://bitbucket.org/gmmregistration/gmm_registration.git
+cd gmm_registration
+
+
+echo 'export GMM_REGISTRATION_PATH=/home/pau_vial/gmm_registration' >> ~/.bashrc
+mkdir build
+cd build/
+cmake ..
+make
+sudo make install
+
+
 cd ~/catkin_ws/src
 
 git clone https://github.com/Zarbokk/BlueROV2Gazebo.git
