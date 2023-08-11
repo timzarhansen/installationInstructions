@@ -19,8 +19,21 @@ cd ~/catkin_ws/src
 
 git clone --branch noetic https://github.com/ros-perception/vision_opencv.git
 
+
+git clone --branch noetic-devel https://github.com/ros-perception/image_transport_plugins.git
+
+sudo apt install libturbojpeg0-dev -y
+
+
+
 cd ..
 catkin build
+
+
+
+
+
+
 
 
 

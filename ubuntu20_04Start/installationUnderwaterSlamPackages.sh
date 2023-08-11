@@ -4,7 +4,8 @@ sudo apt install libtbb-dev
 cd ~/Documents
 git clone https://github.com/borglab/gtsam.git
 cd gtsam
-git checkout 4.1.1
+git checkout 4.2a7
+
 
 
 mkdir build
