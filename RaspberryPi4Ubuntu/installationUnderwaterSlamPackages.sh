@@ -34,7 +34,7 @@ git clone https://bitbucket.org/gmmregistration/gmm_registration.git
 cd gmm_registration
 
 
-echo 'export GMM_REGISTRATION_PATH=/home/pau_vial/gmm_registration' >> ~/.bashrc
+echo 'export GMM_REGISTRATION_PATH=~/Documents/gmm_registration' >> ~/.bashrc
 mkdir build
 cd build/
 cmake ..
@@ -75,7 +75,7 @@ git clone https://github.com/Zarbokk/soft20.git
 git clone https://github.com/Zarbokk/ping360_sonar.git
 git clone https://github.com/GSO-soslab/waterlinked_dvl_ros
 git clone https://github.com/Zarbokk/commonBlueROVMSG.git
-
+git clone https://github.com/Zarbokk/Tritech-Micron-Driver.git
 
 
 cd ~/catkin_ws
