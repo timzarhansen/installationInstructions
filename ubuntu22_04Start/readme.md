@@ -17,3 +17,7 @@ export ROS_IP=10.42.0.1
 # For Tile Customization
 user this `https://extensions.gnome.org/extension/657/shelltile/`
 then add everything
+
+# things for PX4 installation:
+
+at line 285 in GZBridge.cpp increase sleep_cout_limit to 10 times that value. 

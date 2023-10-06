@@ -15,19 +15,22 @@ cmake --build .
 sudo make install
 
 
-cd ~/catkin_ws/src
-
-git clone --branch noetic https://github.com/ros-perception/vision_opencv.git
-
-
-git clone --branch noetic-devel https://github.com/ros-perception/image_transport_plugins.git
-
-sudo apt install libturbojpeg0-dev -y
-
-
-
-cd ..
-catkin build
+#cd ~/ros2_ws/src
+#
+#sudo apt remove ros-humble-cv-bridge -y
+#sudo apt remove ros-humble-image-geometry -y
+#
+#git clone --branch humble https://github.com/ros-perception/vision_opencv.git
+#
+#
+#git clone --branch humble https://github.com/ros-perception/image_transport_plugins.git
+#
+#sudo apt install libturbojpeg0-dev -y
+#
+#
+#
+#cd ..
+#colcon build
 
 
 

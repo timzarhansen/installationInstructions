@@ -50,7 +50,9 @@ source ~/.bashrc
 git clone https://github.com/Zarbokk/installationInstructions.git
 cd ..
 source ~/.bashrc
-catkin build
+colcon build --parallel-workers 2
+
+
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 cd ~
 source ~/.bashrc
