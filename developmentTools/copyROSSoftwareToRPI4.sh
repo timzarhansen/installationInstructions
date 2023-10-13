@@ -1,32 +1,31 @@
 #!/bin/bash
 
-copyFolder () {
-  ssh ubuntu@$1 mkdir -p catkin_ws/src/$2
+copyFolder1 () {
+  ssh sensor_tube@$1 mkdir -p ros2_ws/src/$2
 
-  rsync -avh ~/catkin_ws/src/$2/ ubuntu@$1:~/catkin_ws/src/$2 --exclude=cmake-build-debug --exclude=build --exclude=.git --exclude=.idea --exclude=cmake-build-release --delete
+  rsync -avh ~/ros2_ws/src/$2/ sensor_tube@$1:~/ros2_ws/src/$2 --exclude=cmake-build-debug --exclude=build --exclude=.git --exclude=.idea --exclude=cmake-build-release --delete
+}
+copyFolder2 () {
+  ssh toptube@$1 mkdir -p ros2_ws/src/$2
+
+  rsync -avh ~/ros2_ws/src/$2/ toptube@$1:~/ros2_ws/src/$2 --exclude=cmake-build-debug --exclude=build --exclude=.git --exclude=.idea --exclude=cmake-build-release --delete
 }
 
-IP_ADDRESS="10.42.0.181"
+IP_ADDRESS="10.42.0.12"
 #IP_ADDRESS="192.168.0.193"
 #IP_ADDRESS="10.70.15.149"
-copyFolder "$IP_ADDRESS" "BlueROV2Common"
-copyFolder "$IP_ADDRESS" "UnderwaterSlam"
-copyFolder "$IP_ADDRESS" "soft20"
-copyFolder "$IP_ADDRESS" "ping360_sonar"
-copyFolder "$IP_ADDRESS" "commonBlueROVMSG"
-copyFolder "$IP_ADDRESS" "waterlinked_dvl_ros"
-copyFolder "$IP_ADDRESS" "oru-ros-pkg_Original"
-copyFolder "$IP_ADDRESS" "OpenGR"
-copyFolder "$IP_ADDRESS" "Tritech-Micron-Driver"
+copyFolder1 "$IP_ADDRESS" "BlueROV2Common"
+#copyFolder1 "$IP_ADDRESS" "bluespace_ai_xsens_ros_mti_driver"
+copyFolder1 "$IP_ADDRESS" "commonBlueROVMSG"
+copyFolder1 "$IP_ADDRESS" "ping360_sonar"
+#copyFolder1 "$IP_ADDRESS" "px4_msgs"
+copyFolder1 "$IP_ADDRESS" "waterlinked_a50_dvl_ros2"
 
-IP_ADDRESS="10.42.0.231"
+IP_ADDRESS="10.42.0.222"
 
-copyFolder "$IP_ADDRESS" "BlueROV2Common"
-copyFolder "$IP_ADDRESS" "UnderwaterSlam"
-copyFolder "$IP_ADDRESS" "soft20"
-copyFolder "$IP_ADDRESS" "ping360_sonar"
-copyFolder "$IP_ADDRESS" "commonBlueROVMSG"
-copyFolder "$IP_ADDRESS" "waterlinked_dvl_ros"
-copyFolder "$IP_ADDRESS" "oru-ros-pkg_Original"
-copyFolder "$IP_ADDRESS" "OpenGR"
-copyFolder "$IP_ADDRESS" "Tritech-Micron-Driver"
+copyFolder2 "$IP_ADDRESS" "BlueROV2Common"
+#copyFolder2 "$IP_ADDRESS" "bluespace_ai_xsens_ros_mti_driver"
+copyFolder2 "$IP_ADDRESS" "commonBlueROVMSG"
+copyFolder2 "$IP_ADDRESS" "ping360_sonar"
+#copyFolder2 "$IP_ADDRESS" "px4_msgs"
+copyFolder2 "$IP_ADDRESS" "waterlinked_a50_dvl_ros2"

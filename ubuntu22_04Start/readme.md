@@ -21,3 +21,47 @@ then add everything
 # things for PX4 installation:
 
 at line 285 in GZBridge.cpp increase sleep_cout_limit to 10 times that value. 
+
+
+############################ things to Do:
+
+Add to EKF the heigh message
+
+add a height publisher, and add the px4 barometer message to PX4
+
+
+add control exmaple with controller(COPY from GUI)
+
+Write Visualization(sonar)
+
+
+
+Test out Rosbag(Sonar DVL IMU IMU(px4) DepthSensor)
+
+
+
+Launch file creation:
+Top Tube:
+    restart bottom tube
+    pwm light/camera
+    leakage 
+    XRC client
+
+bottom Tube:
+    Start waterlinked
+    start Ping360
+    start IMU
+    start EKF
+    
+Top:
+    Visualization of Sonar Image
+    visualization of camera
+    controller
+
+
+
+
+
+
+
+

@@ -21,7 +21,7 @@ add `deb http://security.ubuntu.com/ubuntu bionic-security main` to `sudo gedit 
 
 On PI just: `sudo apt install ros-noetic-xsens-mti-driver`
 
-
+Fix for IMU ROS2: [here](https://github.com/bluespace-ai/bluespace_ai_xsens_ros_mti_driver/pull/17/commits/6335017058dc433aa19a9a36d14feae91372438d)
 
 
 # PX4 Commands
@@ -29,3 +29,17 @@ On PI just: `sudo apt install ros-noetic-xsens-mti-driver`
 Show all Topics: `uorb top`
 Print special Topic `listener <TOPIC>`
 Baro: `ms5611 status` or `ms5611 start/stop -X` -X/-S external und -I/-s Internal
+
+
+# setup ROS2 and PX4 setup
+
+`uxrce_dds_client start -t serial -d /dev/ttyS2 -b 921600`
+`uxrce_dds_client status`
+ parameter: `uxrce`
+
+`ms5611 status`
+`ms5837 status`
+
+
+`ms5837 -X start` in `/Documents/PX4-Autopilot/boards/px4/fmu-v5/init`
+
