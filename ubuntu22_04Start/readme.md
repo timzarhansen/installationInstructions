@@ -25,14 +25,14 @@ at line 285 in GZBridge.cpp increase sleep_cout_limit to 10 times that value.
 
 ############################ things to Do:
 
-Add to EKF the heigh message
+Add to EKF the heigh message(Done)
 
-add a height publisher, and add the px4 barometer message to PX4
+add a height publisher, and add the px4 barometer message to PX4 (HAS TO BE TESTED. CURRENTLY MESSAGES LOOK WRONG. maybe i have to use the local message thing)
 
 
 add control exmaple with controller(COPY from GUI)
 
-Write Visualization(sonar)
+Write Visualization(sonar)(maybe done)
 
 
 
