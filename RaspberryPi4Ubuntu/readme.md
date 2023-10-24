@@ -72,3 +72,22 @@ https://pimylifeup.com/raspberry-pi-time-sync/
 
 
 
+Settings for PX4 things
+
+`MicroXRCEAgent serial --dev /dev/ttyACM0 -b 921600` maybe add `ROS_DOMAIN_ID` here
+`uxrce_dds_client start -t serial -d /dev/ttyS2 -b 921600`
+```
+MAV_1_CONFIG = 0 (Disabled)
+UXRCE_DDS_CFG = 102 (TELEM2)
+SER_TEL2_BAUD = 921600
+UXRCE_DDS_KEY
+UXRCE_DDS_DOM_ID
+
+```
+
+
+
+
+[ros2 config environment](https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html)
+
+

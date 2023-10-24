@@ -43,3 +43,9 @@ Baro: `ms5611 status` or `ms5611 start/stop -X` -X/-S external und -I/-s Interna
 
 `ms5837 -X start` in `/Documents/PX4-Autopilot/boards/px4/fmu-v5/init`
 
+`ros2 bag record /imu/data /sonar/intensity /velocity_estimate /pressure /position_estimate /fmu/out/sensor_baro /fmu/out/sensor_combined /rigid_bodies /markers`
+
+
+
+
+

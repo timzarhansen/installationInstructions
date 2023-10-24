@@ -21,6 +21,8 @@ copyFolder1 "$IP_ADDRESS" "ping360_sonar"
 copyFolder1 "$IP_ADDRESS" "ping360_sonar_msgs"
 #copyFolder1 "$IP_ADDRESS" "px4_msgs"
 copyFolder1 "$IP_ADDRESS" "waterlinked_a50_dvl_ros2"
+copyFolder1 "$IP_ADDRESS" "hippo_core"
+copyFolder1 "$IP_ADDRESS" "Tritech-Micron-Driver"
 
 IP_ADDRESS="10.42.0.222"
 
@@ -31,3 +33,4 @@ copyFolder2 "$IP_ADDRESS" "ping360_sonar"
 copyFolder2 "$IP_ADDRESS" "ping360_sonar_msgs"
 #copyFolder2 "$IP_ADDRESS" "px4_msgs"
 copyFolder2 "$IP_ADDRESS" "waterlinked_a50_dvl_ros2"
+copyFolder2 "$IP_ADDRESS" "hippo_core"
