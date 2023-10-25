@@ -2,24 +2,28 @@
 
 mkdir -p ~/Documents
 cd ~/Documents
-git clone https://github.com/PX4/PX4-Autopilot --recursive
-git checkout 5359fe5
+git clone https://github.com/Zarbokk/PX4-Autopilot --recursive
+cd PX4-Autopilot
 git submodule update --recursive
-
 sudo apt install python3-pip -y
+bash Tools/setup/ubuntu.sh
 
-pip3 install --user jsonschema
-pip3 install --user packaging
-pip3 install --user toml
-pip3 install --user jinja2
-pip3 install --user kconfiglib
-mkdir -p ~/Downloads
-cd ~/Downloads
+make px4_fmu-v5_default
+
+
+
+#pip3 install --user jsonschema
+#pip3 install --user packaging
+#pip3 install --user toml
+#pip3 install --user jinja2
+#pip3 install --user kconfiglib
+#mkdir -p ~/Downloads
+#cd ~/Downloads
 #wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 #sudo bash ./install_geographiclib_datasets.sh
-sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly -y
+#sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly -y
 
-bash ~/Documents/PX4-Autopilot/Tools/setup/ubuntu.sh
+
 
 
 

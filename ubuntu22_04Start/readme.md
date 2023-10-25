@@ -10,9 +10,8 @@
 Connect directly to the Pi without PW:[here](https://serverfault.com/questions/241588/how-to-automate-ssh-login-with-password)
 
 # Network Settings
-
-export ROS_MASTER_URI=http://10.42.0.135:11311
-export ROS_IP=10.42.0.1
+This sets a domain id, so that we have a closed system in our systems.
+`export ROS_DOMAIN_ID=161`
 
 # For Tile Customization
 user this `https://extensions.gnome.org/extension/657/shelltile/`
@@ -22,45 +21,15 @@ then add everything
 
 at line 285 in GZBridge.cpp increase sleep_cout_limit to 10 times that value. 
 
+# install Ubuntu on an external harddrive
+Here a description how to install GRUB to make external drive really external.
 
-############################ things to Do:
+`https://www.58bits.com/blog/2020/02/28/how-create-truly-portable-ubuntu-installation-external-usb-hdd-or-ssd`
 
-Add to EKF the heigh message(Done)
+# github page of hippocampus z shell etc.:
 
-add a height publisher, and add the px4 barometer message to PX4 (HAS TO BE TESTED. CURRENTLY MESSAGES LOOK WRONG. maybe i have to use the local message thing)
-
-
-add control exmaple with controller(COPY from GUI)
-
-Write Visualization(sonar)(maybe done)
-
-
-
-Test out Rosbag(Sonar DVL IMU IMU(px4) DepthSensor)
-
-
-
-Launch file creation:
-Top Tube:
-    restart bottom tube
-    pwm light/camera
-    leakage 
-    XRC client
-
-bottom Tube:
-    Start waterlinked
-    start Ping360
-    start IMU
-    start EKF
-    
-Top:
-    Visualization of Sonar Image
-    visualization of camera
-    controller
-
-
-
-
+`https://hippocampusrobotics.github.io/docs/raspberry_pi_4b_setup/quality_of_life_features.html
+`
 
 
 

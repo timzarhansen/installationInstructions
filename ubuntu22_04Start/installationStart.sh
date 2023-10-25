@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[1;31m\]\$\[\033[0m\] '">> ~/.bashrc
+#echo "PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[1;31m\]\$\[\033[0m\] '">> ~/.bashrc
 
 sudo apt update -y
 sudo apt upgrade -y
@@ -27,8 +27,8 @@ sudo apt install ros-humble-desktop -y
 sudo apt install ros-dev-tools -y
 sudo apt install ros-humble-tf2-geometry-msgs ros-humble-tf2 -y
 
-echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+#echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+#source ~/.bashrc
 
 
 
@@ -38,24 +38,42 @@ source ~/.bashrc
 #sudo apt install python3-catkin-tools python3-osrf-pycommon -y
 sudo apt-get install chrome-gnome-shell -y
 sudo apt install vlc -y
-cd ~
-mkdir -p ~/ros2_ws/src
-cd ~/ros2_ws
+sudo apt update -y
+#sudo apt install ros-humble-gazebo-dev -y
+#sudo apt install ros-humble-gazebo-plugins* -y
+sudo apt install texlive-full  -y
 
-sudo rosdep init
-rosdep update
+#sudo apt install libopencv-dev python3-opencv -y
+sudo apt install -y libfftw3-dev -y
+sudo apt install terminator -y
+sudo apt install htop -y
+sudo apt install python3-pip -y
+sudo apt install libqt5gamepad5* -y
+sudo apt install curl -y
+sudo apt install libcgal-dev -y
+pip3 install --user pyquaternion
+sudo apt install nlohmann-json3-dev -y
 
-source ~/.bashrc
-
-git clone https://github.com/Zarbokk/installationInstructions.git
-cd ..
-source ~/.bashrc
-colcon build --parallel-workers 2
 
 
-echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
-cd ~
-source ~/.bashrc
+#cd ~
+#mkdir -p ~/ros2_ws/src
+#cd ~/ros2_ws
+#
+#sudo rosdep init
+#rosdep update
+#
+#source ~/.bashrc
+
+#git clone https://github.com/Zarbokk/installationInstructions.git
+#cd ..
+#source ~/.bashrc
+#colcon build --parallel-workers 2
+#
+#
+#echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+#cd ~
+#source ~/.bashrc
 
 
 
