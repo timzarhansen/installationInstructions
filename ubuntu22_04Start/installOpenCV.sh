@@ -2,6 +2,8 @@
 sudo apt update -y
 sudo apt upgrade -y
 
+sudo apt install build-essential libgtk2.0-dev libgtk-3-dev -y
+
 cd ~/Documents
 mkdir opencvInstall
 cd opencvInstall
