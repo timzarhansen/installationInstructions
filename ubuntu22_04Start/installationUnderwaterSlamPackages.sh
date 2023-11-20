@@ -34,7 +34,7 @@ git clone https://bitbucket.org/gmmregistration/gmm_registration.git
 cd gmm_registration
 
 
-echo 'export GMM_REGISTRATION_PATH=/home/pau_vial/gmm_registration' >> ~/.zshrc
+echo 'export GMM_REGISTRATION_PATH=/home/tim-external/Documents/gmm_registration' >> ~/.zshrc
 mkdir build
 cd build/
 cmake ..

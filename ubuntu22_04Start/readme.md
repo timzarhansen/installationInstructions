@@ -32,5 +32,7 @@ Here a description how to install GRUB to make external drive really external.
 `
 
 
+# add fpic to library, sometimes nessecary (e.g. GMM registration )
 
+`set(CMAKE_CXX_FLAGS "-fPIC")`
 
