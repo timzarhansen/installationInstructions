@@ -44,7 +44,7 @@ sudo apt update -y
 sudo apt install texlive-full  -y
 
 #sudo apt install libopencv-dev python3-opencv -y
-sudo apt install -y libfftw3-dev -y
+sudo apt install libfftw3-dev -y
 sudo apt install terminator -y
 sudo apt install htop -y
 sudo apt install python3-pip -y

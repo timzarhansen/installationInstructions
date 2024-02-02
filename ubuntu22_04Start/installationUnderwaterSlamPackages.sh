@@ -10,7 +10,7 @@ git checkout 4.2a7
 
 mkdir build
 cd build
-cmake ..
+cmake .. -DGTSAM_USE_SYSTEM_EIGEN=ON
 make
 sudo make install
 
