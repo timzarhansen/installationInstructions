@@ -65,7 +65,7 @@ sudo apt install nlohmann-json3-dev -y
 #
 #source ~/.bashrc
 
-#git clone https://github.com/Zarbokk/installationInstructions.git
+#git clone https://github.com/timzarhansen/installationInstructions.git
 #cd ..
 #source ~/.bashrc
 #colcon build --parallel-workers 2

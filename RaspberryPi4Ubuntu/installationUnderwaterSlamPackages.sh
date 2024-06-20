@@ -69,13 +69,13 @@ sudo bash ./install_geographiclib_datasets.sh
 # catkin packages
 cd ~/catkin_ws/src
 
-git clone https://github.com/Zarbokk/BlueROV2Common.git
-git clone https://github.com/Zarbokk/UnderwaterSlam.git
-git clone https://github.com/Zarbokk/soft20.git
-git clone https://github.com/Zarbokk/ping360_sonar.git
+git clone https://github.com/timzarhansen/BlueROV2Common.git
+git clone https://github.com/timzarhansen/UnderwaterSlam.git
+git clone https://github.com/timzarhansen/soft20.git
+git clone https://github.com/timzarhansen/ping360_sonar.git
 git clone https://github.com/GSO-soslab/waterlinked_dvl_ros
-git clone https://github.com/Zarbokk/commonBlueROVMSG.git
-git clone https://github.com/Zarbokk/Tritech-Micron-Driver.git
+git clone https://github.com/timzarhansen/commonBlueROVMSG.git
+git clone https://github.com/timzarhansen/Tritech-Micron-Driver.git
 
 
 cd ~/catkin_ws

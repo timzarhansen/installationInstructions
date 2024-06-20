@@ -47,14 +47,14 @@ cd src
 
 
 
-git clone https://github.com/Zarbokk/px4_msgs.git
-git clone https://github.com/Zarbokk/soft20.git
-git clone https://github.com/Zarbokk/commonBlueROVMSG.git
-git clone https://github.com/Zarbokk/ping360_sonar.git
-git clone https://github.com/Zarbokk/waterlinked_a50_dvl_ros2.git
-git clone https://github.com/Zarbokk/Tritech-Micron-Driver.git
-git clone https://github.com/Zarbokk/ping360_sonar_msgs.git
-git clone https://github.com/Zarbokk/bluespace_ai_xsens_ros_mti_driver.git
+git clone https://github.com/timzarhansen/px4_msgs.git
+git clone https://github.com/timzarhansen/soft20.git
+git clone https://github.com/timzarhansen/commonBlueROVMSG.git
+git clone https://github.com/timzarhansen/ping360_sonar.git
+git clone https://github.com/timzarhansen/waterlinked_a50_dvl_ros2.git
+git clone https://github.com/timzarhansen/Tritech-Micron-Driver.git
+git clone https://github.com/timzarhansen/ping360_sonar_msgs.git
+git clone https://github.com/timzarhansen/bluespace_ai_xsens_ros_mti_driver.git
 
 
 
@@ -69,9 +69,9 @@ cd src
 
 
 
-#git clone https://github.com/Zarbokk/BlueROV2Gazebo.git
-git clone https://github.com/Zarbokk/BlueROV2Common.git
-git clone https://github.com/Zarbokk/UnderwaterSlam.git
+#git clone https://github.com/timzarhansen/BlueROV2Gazebo.git
+git clone https://github.com/timzarhansen/BlueROV2Common.git
+git clone https://github.com/timzarhansen/UnderwaterSlam.git
 #
 
 

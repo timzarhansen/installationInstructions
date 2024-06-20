@@ -36,7 +36,7 @@ rosdep update
 
 cd src
 
-git clone https://github.com/Zarbokk/installationInstructions.git
+git clone https://github.com/timzarhansen/installationInstructions.git
 cd ..
 #catkin build -j 2
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc

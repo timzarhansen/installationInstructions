@@ -2,7 +2,7 @@
 
 mkdir -p ~/Documents
 cd ~/Documents
-git clone https://github.com/Zarbokk/PX4-Autopilot --recursive
+git clone https://github.com/timzarhansen/PX4-Autopilot --recursive
 cd PX4-Autopilot
 git submodule update --recursive
 sudo apt install python3-pip -y
